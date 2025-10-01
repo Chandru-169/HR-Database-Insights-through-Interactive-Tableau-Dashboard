@@ -1,10 +1,10 @@
+## Intrduction
+
+This HR dashboard project is designed to provide leadership and HR teams with a clear, data-driven view of the organization’s workforce. By integrating and visualizing key HR metrics such as headcount, hiring and attrition trends, diversity, compensation, and performance—the dashboard enables informed decision-making, supports strategic workforce planning, and helps identify opportunities for improvement in talent management and organizational effectiveness.
+
 ## Dashboard Recording
 
 https://github.com/user-attachments/assets/a30a5992-4381-485a-b7b5-edce542773e1
-
-
-
-**Intrduction:** This HR dashboard project is designed to provide leadership and HR teams with a clear, data-driven view of the organization’s workforce. By integrating and visualizing key HR metrics—such as headcount, hiring and attrition trends, diversity, compensation, and performance—the dashboard enables informed decision-making, supports strategic workforce planning, and helps identify opportunities for improvement in talent management and organizational effectiveness.
 
 ## Power Point Presentation
 
@@ -35,6 +35,7 @@ https://github.com/user-attachments/assets/a30a5992-4381-485a-b7b5-edce542773e1
 ## Build Data Source and Calculated fields
 
 Imported dataset (csv) into Tableau
+
 Created calculated Fields & Hierarchy: 
    1. Total & Percentage values for Hired, Active, Terminated employees
    2. Location to distinguish between HQ and branch
@@ -59,39 +60,58 @@ Created calculated Fields & Hierarchy:
 2. Job Titles: Bar chart showing total hires by job title, with color coding for top roles
 3. Departmental Trends: Trends of hires and terminations by department over time
 
-**C) Weekly Trend Analysis**
+**C) Location Analysis Visual**
 
-1. **Line chart**: It shows the weekly trend of fitness activity for each metric: Distance covered, Move Minutes, Calories burned, Steps covered in each week for any selected year
-2. **Dual Metric Selector**: Allows toggling between fitness activity indicators: Calories, Distance, Hours, Minutes, Steps (E.g. Total Distance Vs Total Calories; Total Steps Vs Total Distance)
-3. **Slicers**: Year, Metric Selector
-4. This visual is created in such a way that “single line chart” is used and with the advantage of dual metric selector user can analyze the relation between each fitness activity over the weeks instead of looking at multiple line charts
+1. State Map: Map visual showing total hires by state, color-coded for volume
+2. City Breakdown: Bar chart for hires by city
+3. Location Split: Column chart showing percentage of employees at HQ vs Branch
 
-**D) Daily Fitness Activity Tracker**
+**D) Demographics Visual**
 
-1. **Table**: Daily breakdown of Steps, Distance, Minutes, Hours, Calories. Also, Target status for each fitness activity is included
-2. **Summary KPIs**: Distance Target %, Minutes Target %, Steps Target %, Calories Target %. This helps to understand the target achieved for each activity for the selected year-month combination
+1. Gender Distribution: Pie/bar chart for gender split
+2. Age Groups: Bar chart for hires by age group
+3. Education Levels: Bar chart for hires by education level
+
+**E) Education & Age Visual**
+
+1. Matrix/Heatmap: Cross-tab showing hires by education level vs age group, with color and size indicating volume
+2. Highlight Max: Color highlights the highest group
+
+**F) Education & Performance Visual**
+
+1. Matrix/Heatmap: Cross-tab showing % of hires by education level vs. performance rating
+2. Bubble Size: Indicates % of total hires
+
+**G) Income Visual**
+
+1. Education & Gender: Bar chart showing average salary by education level and gender
+2. Salary by Education: Line or bar chart showing average salary for each education level
+
+**H) Age & Salary Visual**
+
+1. Scatter Chart: Average salary plotted against age, with job titles labeled
+2. Salary Trends: Line chart showing salary progression by age
+
+**I) Employee Detailed list Visual**
+
+1. Table: Employee-level data including ID, Name, Age, Education, Role, Department, Location, Salary, Status, Length of Employment, Hire/Termination Years
+2. Filters: Arrows for filtering by each column
+
+## Dashboard Designing
+
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/382365a4-6d59-4e51-8092-8a6edac5389a" />
 
 
-## Summary of Analytical Insights from the Dashboard
+## Key Analytical Insights
 
-![image](https://github.com/user-attachments/assets/d8465727-33bd-4ab1-a00d-e41efff64741)
+  <img width="1011" height="1079" alt="image" src="https://github.com/user-attachments/assets/6bba9a3f-108b-4194-bc75-5ef7282941f8" />
 
+## Recommendations
 
-## Fitness Improvement Suggestions
-
-  **1. Improve Target Consistency:** Focus on Distance and Steps targets by setting daily micro goals
-  
-  **2. Leverage High Performance Months:** Analyze what worked in May–June and replicate those habits in lower-performing months
-  
-  **3. Optimize Weekday Activity:** Introduce short, high effort sessions during weekdays to close target gaps
-  
-  **4. Use Weekly Reviews:** Monitor weekly trends to adjust intensity and duration
-
-  **5. Set SMART Goals:** Walk 3 km daily, Cover 4000 Steps daily, Burn 5000 Cal weekly
-
+<img width="924" height="1079" alt="image" src="https://github.com/user-attachments/assets/f33ade5c-94b2-4362-92e3-064fc0716011" />
 
 ## Appendix: Dashboard Screenshots
 
-  ![image](https://github.com/user-attachments/assets/9392fdd6-14c8-4e58-a33b-65615e7c9d00)
+<img width="1408" height="808" alt="image" src="https://github.com/user-attachments/assets/797edd09-161e-47b6-9647-cac277da47e3" />
 
-![image](https://github.com/user-attachments/assets/20ea86d5-74db-461c-bb5e-b759460dc584)
+<img width="1408" height="807" alt="image" src="https://github.com/user-attachments/assets/ec395343-6a86-4a51-a36d-03671d63b5d1" />
