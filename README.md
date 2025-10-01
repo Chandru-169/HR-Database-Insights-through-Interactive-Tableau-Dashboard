@@ -1,67 +1,62 @@
-## Dashboard Recording
+<img width="1030" height="182" alt="image" src="https://github.com/user-attachments/assets/2b22bd91-e3fd-4329-84a5-2126db9681da" /><img width="1892" height="236" alt="image" src="https://github.com/user-attachments/assets/c24b0a65-fa49-40e8-b510-82d00da1532f" /><img width="546" height="73" alt="image" src="https://github.com/user-attachments/assets/5b7fc69c-4866-46bc-ac0d-723019008cee" /><img width="1759" height="185" alt="image" src="https://github.com/user-attachments/assets/82dc7b5d-bdec-48ac-a29f-83549fa660bf" /><img width="676" height="102" alt="image" src="https://github.com/user-attachments/assets/1c09a176-dcb5-47f7-98d6-9d6be54910ed" />## Dashboard Recording
 
 https://github.com/user-attachments/assets/a30a5992-4381-485a-b7b5-edce542773e1
 
 
-**Intrduction:** This project focuses building a comprehensive **Power BI dashboard** to analyze personal fitness data from Google Fit, aiming to provide actionable insights. It begins with importing and cleaning the data, followed by generating calculated columns and DAX measures to track key metrics like steps, distance, calories, and active minutes. Interactive visuals such as charts and slicers enable dynamic exploration of trends across days, weeks, and months. The dashboard includes detailed daily tracking, weekly and monthly trend analysis, and highlights goal achievement status. Analytical insights reveal performance patterns and correlations, while personalized suggestions help improve consistency and effectiveness in fitness routines.
+**Intrduction:** This HR dashboard project is designed to provide leadership and HR teams with a clear, data-driven view of the organization’s workforce. By integrating and visualizing key HR metrics—such as headcount, hiring and attrition trends, diversity, compensation, and performance—the dashboard enables informed decision-making, supports strategic workforce planning, and helps identify opportunities for improvement in talent management and organizational effectiveness.
 
 ## Power Point Presentation
 
-[Personal Fitness Activity Performance Dashboard.pptx](https://github.com/user-attachments/files/20540112/Personal.Fitness.Activity.Performance.Dashboard.pptx)
-
+[HR Database Insights.pptx](https://github.com/user-attachments/files/22642717/HR.Database.Insights.pptx)
 
 ## Table of Contents
 
-1. Project Objective
-2. Data Import and Preparation
-3. Calculated Columns and Measures using DAX
-4. Dynamic charts and Interactive Visuals
-5. Fitness Activity Monthly / WeeklyTrend Analysis
-6. Daily Fitness Activity Tracker
-7. Analytical Insights from the Dashboard
-8. Fitness Improvement Suggestions
-
+1. Project objective
+2. Build Data source and Calculated fields
+3. Build Dynamic charts and interactive visuals
+4. Dashboard designing
+5. Key analytical & Data driven insights supporting the objectives
+6. Recommendations
 
 ## Project Objective
 
-1. To consolidate and visualize personal fitness data from Google Fit to gain actionable insights into daily, weekly, and monthly activity patterns
-2. To track and evaluate key health metrics such as total steps, distance covered, calories burned, and active minutes over time
-3. To monitor goal achievement by comparing actual performance against predefined fitness targets (e.g., distance, steps, calories, minutes)
-4. To identify trends and gaps in physical activity across different time periods (weekdays vs weekends, months, years)
-5. To enable dynamic exploration of fitness performance using interactive filters and parameter based metric selectors in Power BI
-6. To support data driven decision making for improving consistency, intensity, and effectiveness of fitness routines
-7. To encourage behavioral change by highlighting high and low performance periods and suggesting areas for improvement
+1. Provide clear, actionable HR analytics for decision-making
+2. Track hiring and termination trends by year, department, and demographics
+3. Reduce employee turnover through data-driven insights
+4. Optimize staffing across all departments
+5. Promote diversity and inclusion in hiring and retention
+6. Support talent management with detailed workforce breakdowns
+7. Benchmark performance and education for better training and hiring
+8. Enable geographic workforce planning by state and city
+9. Monitor and improve employee tenure and lifecycle
+10. Deliver concise HR dashboards for leadership reporting
 
+## Build Data Source and Calculated fields
 
-## Data Import and Preparation
+Imported dataset (csv) into Tableau
+Created calculated Fields & Hierarchy: 
+   1. Total & Percentage values for Hired, Active, Terminated employees
+   2. Location to distinguish between HQ and branch
+   3. Length of Hire to identify the employee duration
+   4. Rank field based on total hired to utilize in various charts
+   5. Employee status based on hire & term dates
+   6. Age groups to utilize in heat maps
+   7. Hierarchy for Department – Job Title & Location: State - City
 
-**Data Preparation &Transformation Steps are:**
+## Build Dynamic charts & Interactive Visuals
 
-1. Imported Google Fit data (.csv) into Power BI
-2. Cleaned and structured the data to extract: Date, Day Name, Week, Month,Year
-3. Created **calculated Columns using DAX:**
-   •  Target achievement flags: Distance, Move Minutes, Calories, Steps ( “Target met” vs “Target not met”)
-   •  Year-Month combination
-   •  Weekend Flag for weekday/weekend analysis
-4. Created **Measures / Aggregations using DAX:**
-   •  Total values for Calories, Distance (km), Steps, Minutes, Hours
-   •  Derived percentages of target achievement for each metric
+**A) Overview Visual**
 
+1. Active Employees, Hired, Terminated: Key metrics displayed as summary cards
+2. Departments: Bar chart showing total hired and terminated employees by department (e.g., Operations, Sales, Customer Service, IT, Marketing, Finance, HR)
+3. Location: Pie or bar chart showing employee distribution between HQ and Branch
+4. Demographics: Pie chart for gender distribution (Male/Female)
 
-## Dynamic charts, Interactive Visuals and Fitness Activity Trend Analysis
+**B) Department Analysis Visual**
 
-**A) Target Achievement Overview**
-
-1. **Donut chart**: It shows the number of days in which Target is met Vs Target not met for each metric: Distance covered, Move Minutes, Calories burned, Steps covered based on dynamic selection using parameters created
-2. **Column Chart**: It helps to conduct comparison analysis at monthly level over the selected years for each metric. Weekend flag has been utilized as a legend to distinguish the values between weekday Vs weekend
-3. **Card**: Added the Card (new) visual to display each fitness activity values scored along with target achievement
-4. **Slicers**: Year, Metric Selector, Weekend Flag
-
-**B) Daily and Monthly Fitness Activity**
-
-1. **Scatter Plot**: It shows the day wise total distance covered / calories burned / Minutes active / Hours active / Steps covered allowing users to study the selected fitness activity at day level for a given year-month combo
-2. **Tree Map**: It shows the month wise total distance / calories / Minutes / Hours / Steps which helps to easily visualize which month observed the highest or lowest fitness activity
-3. Both visuals are linked to common slicers and metric parameter allowing **dynamic changes to reflect simultaneously**
+1. Department Breakdown: Bar chart showing hires and terminations by department
+2. Job Titles: Bar chart showing total hires by job title, with color coding for top roles
+3. Departmental Trends: Trends of hires and terminations by department over time
 
 **C) Weekly Trend Analysis**
 
