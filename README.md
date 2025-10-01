@@ -4,7 +4,7 @@ This HR dashboard project is designed to provide leadership and HR teams with a 
 
 ## Dashboard Recording
 
-https://github.com/user-attachments/assets/a30a5992-4381-485a-b7b5-edce542773e1
+https://github.com/user-attachments/assets/2d57cd2b-8d67-4f1d-8e63-9ee01adf5ae3
 
 ## Power Point Presentation
 
